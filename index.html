@@ -2,11 +2,22 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <link rel="stylesheet" type="text/css" href="./css/app.css">
+        <link  href="https://fonts.googleapis.com/css?family=Hind&amp;display=swap">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+       <link rel="icon" href="./img/search-icon-large.png">
+       <script src="./js/app.js"></script>
+
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <p id="name">Click On The Icon</p>
+        <br>
+
+    	<form id="my_form" onsubmit="appendUrl()" class="search-bar">
+	<input type="search" name="keywords" pattern=".*\S.*" required>
+	<button class="search-btn" type="submit">
+		<span>Search</span>
+	</button>
+</form>
     </body>
 </html>
